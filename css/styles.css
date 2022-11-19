@@ -298,12 +298,14 @@ pre {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .form-field input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
+  padding-left: 42px;
 }
 
 .form-field label {
@@ -318,12 +320,16 @@ pre {
 }
 
 .coment-field label {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 .coment-field textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .coment-field textarea::placeholder {
@@ -348,18 +354,17 @@ pre {
   color: #212121;
 }
 
-.confirm-field {
-  font-family: "Roboto";
-  font-style: normal;
+.title-label {
+  font-family: 'Roboto';
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  margin-top: 20px;
-
-  letter-spacing: 0.03em;
-
+  font-size: 12px;
+  line-height: 1.4;
+  
+  letter-spacing: 0.01em;
+  
   color: #757575;
 }
+
 
 .agreement {
   text-decoration-line: underline;
@@ -373,11 +378,70 @@ pre {
   padding-bottom: 10px;
   padding-left: 52px;
   padding-right: 52px;
+  background-color: #2196F3;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: #ffffff;
 }
 
 textarea {
   resize: none;
 }
+
+.form-input:focus ~ .icons-form {
+  fill: #2196F3;
+}
+
+.option {
+  display: block;
+  position: relative;
+  
+}
+
+.check {
+  padding-left: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 20px;
+
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.check-input {
+  appearance: none;
+  position: absolute;
+  
+}
+
+.check-box {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/chek1.svg);
+}
+
+.check-text {
+  margin-left: 25px;
+}
+
+.check-input:checked + .check-box {
+  background-image: url(../images/chek2.svg);
+  box-sizing: content-box;
+  background-color: #2196F3;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 
 /* main */
 
@@ -398,6 +462,14 @@ textarea {
 .box-svg:last-child {
   margin-right: 0;
 }
+
+
+.icons-form {
+position: absolute;
+bottom: 10px;
+left: 15px;
+}
+
 
 /* .box-link {
   width: 100%;

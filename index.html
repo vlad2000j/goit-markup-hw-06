@@ -54,30 +54,45 @@
 
                 <div class="form-field">
                   <label for="name" class="title-label">Ім'я</label>
-                  <input type="text" name="name" id="name" autofocus />
+                  <input type="text" name="name" id="name" autofocus class="form-input" />
+                  <span class="icons-form">
+                    <svg class="iconform-tel" width="13" height="13">
+                      <use href="./images/icons-form.svg#iconform-human"></use>
+                    </svg>
+                  </span>
                 </div>
 
                 <div class="form-field">
-                  <label for="tel">Телефон</label>
-                  <input type="tel" name="tel" id="tel" />
+                  <label for="tel" class="title-label">Телефон</label>
+                  <input type="tel" name="tel" id="tel" class="form-input" />
+                  <span class="icons-form">
+                    <svg class="" width="13" height="13">
+                      <use href="./images/icons-form.svg#iconform-tel"></use>
+                    </svg>
+                </span>
                 </div>
 
                 <div class="form-field">
-                  <label for="email">Пошта</label>
-                  <input type="email" name="email" id="email" />
+                  <label for="email" class="title-label">Пошта</label>
+                  <input type="email" name="email" id="email" class="form-input" />
+                  <span class="icons-form">
+                    <svg class="iconform-mail" width="13" height="13">
+                      <use href="./images/icons-form.svg#iconform-mail"></use>
+                    </svg>
+                  </span>
                 </div>
 
                 <div class="coment-field">
-                  <label for="comment">Коментар</label>
+                  <label for="comment" class="title-label">Коментар</label>
                   <textarea name="comment" id="comment" rows="10" placeholder="Введіть коментар"></textarea>
                 </div>
 
-                <div class="confirm-field">
-                  <input type="checkbox" name="confirm" value="confirm" id="confirm" class="checkbox" />
-                  <label for="confirm">Погоджуюся з розсилкою та приймаю
-                    <a href="" class="agreement">Умови договору</a>
-                  </label>
-                </div>
+               
+                 <label class="check option">
+                    <input type="checkbox" class="check-input">
+                    <span class="check-box"></span> 
+                    <span class="check-text">Погоджуюся з розсилкою та приймаю <a href="" class="agreement">Умови договору</a></span>
+                 </label>
 
                 <button type="submit" class="form-button">Відправити</button>
               </form>
