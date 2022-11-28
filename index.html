@@ -69,7 +69,7 @@
                     <svg class="" width="13" height="13">
                       <use href="./images/icons-form.svg#iconform-tel"></use>
                     </svg>
-                </span>
+                  </span>
                 </div>
 
                 <div class="form-field">
@@ -84,15 +84,16 @@
 
                 <div class="coment-field">
                   <label for="comment" class="title-label">Коментар</label>
-                  <textarea name="comment" id="comment" rows="10" placeholder="Введіть коментар"></textarea>
+                  <textarea class="form-input" name="comment" id="comment" rows="10"
+                    placeholder="Введіть коментар"></textarea>
                 </div>
 
-               
-                 <label class="check option">
-                    <input type="checkbox" class="check-input">
-                    <span class="check-box"></span> 
-                    <span class="check-text">Погоджуюся з розсилкою та приймаю <a href="" class="agreement">Умови договору</a></span>
-                 </label>
+                <label class="check option">
+                  <input type="checkbox" class="check-input" />
+                  <span class="check-box"></span>
+                  <span class="check-text">Погоджуюся з розсилкою та приймаю
+                    <a href="" class="agreement">Умови договору</a></span>
+                </label>
 
                 <button type="submit" class="form-button">Відправити</button>
               </form>
@@ -434,6 +435,22 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="footer-formblock">
+        <h3 class="footer-form-title">Підпишіться на розсилку</h3>
+        <div class="footer-block">
+          <form action="" class="footer-form">
+            <div class="footer-form-field">
+              <input type="text" class="footer-input" name="name" id="name" placeholder="Email" />
+            </div>
+          </form>
+          <button type="submit" class="footer-button">
+            Підписатися
+            <svg class="footer-button-icon" width="24" height="24">
+              <use href="./images/icons-form.svg#iconform-send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </footer>

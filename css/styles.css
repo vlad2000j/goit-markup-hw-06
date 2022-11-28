@@ -9,6 +9,30 @@ ul {
   padding: 0;
 }
 
+.form-input{
+  outline: none;
+}
+
+.form-input:hover {
+  outline: 1px solid #2196F3;
+}
+
+.form-input:focus {
+  outline: 1px solid #2196F3;
+}
+
+.form-input {
+  outline: none;
+}
+
+.form-input:hover {
+  outline: 1px solid #2196F3;
+}
+
+.form-input:focus {
+  outline: 1px solid #2196F3;
+}
+
 :root {
   --main-color: #ffffff;
   --secondary-color: #2196f3;
@@ -288,6 +312,13 @@ pre {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.modal-close:hover .svg-close,
+.modal-close:focus .svg-close{
+  color: #2196f3;
+}
+
+
 
 .form {
   margin-left: auto;
@@ -979,6 +1010,71 @@ left: 15px;
   margin-left: 70px;
   padding-top: 16px;
 }
+
+/* footer-form */
+
+.footer-formblock {
+  margin-left: 93px;
+  margin-top: 16px;
+}
+
+.footer-block {
+  display: flex;
+}
+
+.footer-form-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer-form-field {
+  
+}
+
+.footer-input {
+  height: 50px;
+  width: 358px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2F303A;
+  outline: none;
+ 
+}
+
+.footer-button {
+  display: flex;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-left: 40px;
+  
+  color: #FFFFFF;
+}
+
+.footer-button-icon {
+  margin-left: 10px;
+}
+
+
+
+
+
 
 /* Блоки */
 
