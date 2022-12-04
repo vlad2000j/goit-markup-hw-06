@@ -47,10 +47,10 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <form action="" class="form js-speaker-form">
-                <h2 class="title-form">
+              <form class="form js-speaker-form">
+                <p class="title-form">
                   Залиште свої дані, ми вам передзвонимо
-                </h2>
+                </p>
 
                 <div class="form-field">
                   <label for="name" class="title-label">Ім'я</label>
@@ -88,14 +88,18 @@
                     placeholder="Введіть коментар"></textarea>
                 </div>
 
+                <div class=checkbox-box>
                 <label class="check option">
                   <input type="checkbox" class="check-input" />
                   <span class="check-box"></span>
                   <span class="check-text">Погоджуюся з розсилкою та приймаю
                     <a href="" class="agreement">Умови договору</a></span>
                 </label>
+                </div>
 
+                <div class="button-box">
                 <button type="submit" class="form-button">Відправити</button>
+                </div>
               </form>
               <p class="modal-text"></p>
               <button type="button" class="modal-close" data-modal-close>
@@ -437,20 +441,18 @@
         </ul>
       </div>
       <div class="footer-formblock">
-        <h3 class="footer-form-title">Підпишіться на розсилку</h3>
-        <div class="footer-block">
-          <form action="" class="footer-form">
-            <div class="footer-form-field">
+        <p class="footer-form-title">Підпишіться на розсилку</p>
+          <form class="footer-form">
+            <div class="footer-flex">
               <input type="text" class="footer-input" name="name" id="name" placeholder="Email" />
+              <button type="submit" class="footer-button">
+                Підписатися
+                <svg class="footer-button-icon" width="24" height="24">
+                  <use href="./images/icons-form.svg#iconform-send"></use>
+                </svg>
+              </button>
             </div>
           </form>
-          <button type="submit" class="footer-button">
-            Підписатися
-            <svg class="footer-button-icon" width="24" height="24">
-              <use href="./images/icons-form.svg#iconform-send"></use>
-            </svg>
-          </button>
-        </div>
       </div>
     </div>
   </footer>

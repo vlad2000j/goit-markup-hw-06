@@ -9,13 +9,8 @@ ul {
   padding: 0;
 }
 
-.form-input{
-  outline: none;
-}
 
-.form-input:hover {
-  outline: 1px solid #2196F3;
-}
+
 
 .form-input:focus {
   outline: 1px solid #2196F3;
@@ -25,13 +20,6 @@ ul {
   outline: none;
 }
 
-.form-input:hover {
-  outline: 1px solid #2196F3;
-}
-
-.form-input:focus {
-  outline: 1px solid #2196F3;
-}
 
 :root {
   --main-color: #ffffff;
@@ -284,6 +272,7 @@ pre {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 
   position: absolute;
   top: 50%;
@@ -292,14 +281,14 @@ pre {
 }
 
 .modal-close {
+  cursor: pointer;
   box-sizing: border-box;
   width: 30px;
   height: 30px;
-  margin-top: 8px;
-  margin-right: 8px;
   position: absolute;
   top: 0;
   right: 0;
+  transform: translate(-20%, 20%);
   background-color: #ffffff;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -322,7 +311,6 @@ pre {
 
 .form {
   margin-left: auto;
-  padding: 40px;
 }
 
 .form-field {
@@ -402,9 +390,13 @@ pre {
   color: #2196f3;
 }
 
+.button-box {
+  /* display: flex;
+  justify-content: center; */
+}
+
 .form-button {
-  margin-top: 30px;
-  margin-left: 124px;
+
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 52px;
@@ -414,6 +406,10 @@ pre {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: #ffffff;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  cursor: pointer;
 }
 
 textarea {
@@ -430,8 +426,16 @@ textarea {
   
 }
 
+
+.checkbox-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
 .check {
-  padding-left: 12px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -493,6 +497,8 @@ textarea {
 .box-svg:last-child {
   margin-right: 0;
 }
+
+
 
 
 .icons-form {
@@ -1015,12 +1021,16 @@ left: 15px;
 
 .footer-formblock {
   margin-left: 93px;
-  margin-top: 16px;
+  padding-top: 16px;
 }
 
-.footer-block {
+.footer-flex {
   display: flex;
+  align-items: center;
+
 }
+
+
 
 .footer-form-title {
   margin-bottom: 20px;
@@ -1032,9 +1042,6 @@ left: 15px;
   color: #FFFFFF;
 }
 
-.footer-form-field {
-  
-}
 
 .footer-input {
   height: 50px;
@@ -1045,10 +1052,12 @@ left: 15px;
   border-radius: 4px;
   background: #2F303A;
   outline: none;
+  color: #FFFFFF;
  
 }
 
 .footer-button {
+  cursor: pointer;
   display: flex;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1062,7 +1071,7 @@ left: 15px;
   padding-bottom: 10px;
   padding-left: 28px;
   padding-right: 28px;
-  margin-left: 40px;
+  margin-left: 12px;
   
   color: #FFFFFF;
 }
