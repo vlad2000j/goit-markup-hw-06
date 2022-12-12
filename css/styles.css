@@ -300,11 +300,12 @@ pre {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  fill: #000000;
 }
 
 .modal-close:hover .svg-close,
-.modal-close:focus .svg-close{
-  color: #2196f3;
+.modal-close:focus .svg-close {
+  fill: #2196F3;
 }
 
 
@@ -1020,8 +1021,9 @@ left: 15px;
 /* footer-form */
 
 .footer-formblock {
-  margin-left: 93px;
   padding-top: 16px;
+  
+  
 }
 
 .footer-flex {
@@ -1060,6 +1062,7 @@ left: 15px;
   cursor: pointer;
   display: flex;
   background: #2196F3;
+  border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
@@ -1072,6 +1075,7 @@ left: 15px;
   padding-left: 28px;
   padding-right: 28px;
   margin-left: 12px;
+ 
   
   color: #FFFFFF;
 }
@@ -1103,6 +1107,12 @@ left: 15px;
   padding-right: 15px;
   display: flex;
 }
+
+.footer-container .footer-formblock {
+  margin-left: 130px;
+
+}
+
 
 .hero-limitation {
   margin-left: auto;
